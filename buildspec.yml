@@ -7,8 +7,7 @@ phases:
 
   build:
     commands:
-      - chmod +x mvnw
-      - ./mvnw clean test package
+      - mvn clean test package
       - cp target/cicddemo-0.0.1-SNAPSHOT.jar cicddemo.jar
 
 artifacts:
