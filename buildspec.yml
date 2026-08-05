@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+
+  build:
+    commands:
+      - chmod +x mvnw
+      - ./mvnw clean test package
+      - cp target/cicddemo-0.0.1-SNAPSHOT.jar cicddemo.jar
+
+artifacts:
+  files:
+    - cicddemo.jar
+    - Procfile

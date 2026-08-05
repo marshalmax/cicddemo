@@ -1,0 +1,1 @@
+web: java -jar cicddemo.jar --server.port=5000
