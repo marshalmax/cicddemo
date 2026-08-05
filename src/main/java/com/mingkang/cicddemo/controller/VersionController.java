@@ -13,7 +13,7 @@ public class VersionController {
         return Map.of(
                 "application", "cicd-demo",
                 "environment", "local",
-                "version", "v1",
+                "version", "v3",
                 "message", "Java CI/CD deployment succeeded",
                 "time", Instant.now().toString()
         );
