@@ -8,8 +8,9 @@ phases:
   build:
     commands:
       - mvn clean test package
+      - cp target/cicddemo.jar cicddemo.jar
 
 artifacts:
   files:
-    - target/cicddemo.jar
+    - cicddemo.jar
     - Procfile
